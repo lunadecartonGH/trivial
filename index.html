@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header> 
+    
+    <h1>TRIVIAL DE LUIMELIA 🌙
+    </h1>
+    
+</header>
+<main>
+   <div> 
+    <section>
+        <p> 🥐<span class="score"></span></p>
+        
+       
+        
+    
+    </section>
+    <section>
+        
+       
+        <p>🧥</p>
+    
+    </section>
+   </div>
+
+       
+        
+         
+    <img src="./images/lui.jpg" />
+<h3> ¿En qué calle está la librería "La luna de Cartón"? </h3> 
+<ul class="answers"> 
+    <li class="answer1">Calle Modesto La Fuente, 52</li>
+    <li class="answer2">Calle Modesto La Fuente, 32</li>
+    <li class="answer3">En nuestros corazones</li>
+     </ul>
+    
+    
+
+
+</main>
+<footer> <p> @Lerhus developer in development</p></footer>
+
+</body>
+<script>
+    
+    var resp1=document.querySelector("li.answer1")
+    var resp2=document.querySelector("li.answer2")
+    var resp3=document.querySelector("li.answer3")
+    var score=document.querySelector("span.score")
+    var points=0; 
+
+    resp1.addEventListener('click', function (event) {
+
+        console.log("tata")
+
+points=points+1; 
+score.innerHTML=points.toString()  
+}, false);
+
+
+</script>
+
+</html>
+
